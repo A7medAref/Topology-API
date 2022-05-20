@@ -1,0 +1,157 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classresistor" kind="class" language="C++" prot="public">
+    <compoundname>resistor</compoundname>
+    <basecompoundref refid="classcomponent" prot="public" virt="non-virtual">component</basecompoundref>
+    <includes refid="resistor_8h" local="no">resistor.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classresistor_1a21ef4baf8ddaba3ee2af7a389959feee" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string resistor::t1</definition>
+        <argsstring></argsstring>
+        <name>t1</name>
+        <qualifiedname>resistor::t1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="resistor.h" line="5" column="12" bodyfile="resistor.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classresistor_1ae1117a7f660e2ff28a5a07cb820a49c3" prot="private" static="no" mutable="no">
+        <type>string</type>
+        <definition>string resistor::t2</definition>
+        <argsstring></argsstring>
+        <name>t2</name>
+        <qualifiedname>resistor::t2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="resistor.h" line="5" column="15" bodyfile="resistor.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classresistor_1ae7780d614bc475dae96813fa701e4e33" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>resistor::resistor</definition>
+        <argsstring>(string &amp;ID, string &amp;TYPE, double &amp;DEFAULT, double &amp;MIN, double &amp;MAX, map&lt; string, string &gt; &amp;NETLIST)</argsstring>
+        <name>resistor</name>
+        <qualifiedname>resistor::resistor</qualifiedname>
+        <param>
+          <type>string &amp;</type>
+          <declname>ID</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>TYPE</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>DEFAULT</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>MIN</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>MAX</declname>
+        </param>
+        <param>
+          <type>map&lt; string, string &gt; &amp;</type>
+          <declname>NETLIST</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="resistor.h" line="8" column="5" bodyfile="resistor.cpp" bodystart="2" bodyend="5"/>
+        <references refid="classcomponent_1af8391808376a243475ca53dc0186c3c3" compoundref="component_8cpp" startline="3" endline="7">component::setData</references>
+      </memberdef>
+      <memberdef kind="function" id="classresistor_1ab4fec0d3e3d306a676c847a5bf55fca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void resistor::printSpecialData</definition>
+        <argsstring>()</argsstring>
+        <name>printSpecialData</name>
+        <qualifiedname>resistor::printSpecialData</qualifiedname>
+        <reimplements refid="classcomponent_1a1d6d62d913be4323c01af5bf5abf3284">printSpecialData</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="resistor.h" line="9" column="10" bodyfile="resistor.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>component</label>
+        <link refid="classcomponent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>device</label>
+        <link refid="classdevice"/>
+      </node>
+      <node id="1">
+        <label>resistor</label>
+        <link refid="classresistor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>component</label>
+        <link refid="classcomponent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>device</label>
+        <link refid="classdevice"/>
+      </node>
+      <node id="1">
+        <label>resistor</label>
+        <link refid="classresistor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="resistor.h" line="3" column="1" bodyfile="resistor.h" bodystart="4" bodyend="10"/>
+    <listofallmembers>
+      <member refid="classdevice_1aa5f2d2dc4b67a658165b27ed81ca41a0" prot="protected" virt="non-virtual"><scope>resistor</scope><name>default_val</name></member>
+      <member refid="classdevice_1a9d4e38d6e7f3122146ca41cef3a35756" prot="public" virt="non-virtual"><scope>resistor</scope><name>getDefault</name></member>
+      <member refid="classdevice_1af0e4c032ff342a73449ddf3bcdbb24fb" prot="public" virt="non-virtual"><scope>resistor</scope><name>getID</name></member>
+      <member refid="classdevice_1a3367e59575d543ebb1ee6209f4c0ca22" prot="public" virt="non-virtual"><scope>resistor</scope><name>getMax</name></member>
+      <member refid="classdevice_1ac57702748322c69357c7ab65c453d27b" prot="public" virt="non-virtual"><scope>resistor</scope><name>getMin</name></member>
+      <member refid="classcomponent_1ae001395621bd5a0442aed4d26700efb2" prot="public" virt="non-virtual"><scope>resistor</scope><name>getNetlist</name></member>
+      <member refid="classdevice_1acd13cfc365c2fa38f926d955be1ec5b2" prot="public" virt="non-virtual"><scope>resistor</scope><name>getType</name></member>
+      <member refid="classcomponent_1a79511c951557d361d4e956c82137da70" prot="public" virt="non-virtual"><scope>resistor</scope><name>hasNetlistNode</name></member>
+      <member refid="classdevice_1a452a6a3d5bfb3fbdd625c20a1f69e538" prot="protected" virt="non-virtual"><scope>resistor</scope><name>id</name></member>
+      <member refid="classdevice_1a6a7a4d88c4f5613201e6f9acfb95f2bf" prot="protected" virt="non-virtual"><scope>resistor</scope><name>max_val</name></member>
+      <member refid="classdevice_1a116b1479ca0fec8611fd43ad65cff692" prot="protected" virt="non-virtual"><scope>resistor</scope><name>min_val</name></member>
+      <member refid="classcomponent_1a77118814571c4dc1a3eb8d13708943e1" prot="protected" virt="non-virtual"><scope>resistor</scope><name>netlist</name></member>
+      <member refid="classcomponent_1a1d525e2d2c985ed0da4f7f13b22f453d" prot="public" virt="non-virtual"><scope>resistor</scope><name>print</name></member>
+      <member refid="classresistor_1ab4fec0d3e3d306a676c847a5bf55fca3" prot="public" virt="virtual"><scope>resistor</scope><name>printSpecialData</name></member>
+      <member refid="classresistor_1ae7780d614bc475dae96813fa701e4e33" prot="public" virt="non-virtual"><scope>resistor</scope><name>resistor</name></member>
+      <member refid="classcomponent_1af8391808376a243475ca53dc0186c3c3" prot="public" virt="non-virtual"><scope>resistor</scope><name>setData</name></member>
+      <member refid="classdevice_1aff7843c682e3d3fded1335f3fa4a035d" prot="public" virt="non-virtual" ambiguityscope="device::"><scope>resistor</scope><name>setData</name></member>
+      <member refid="classresistor_1a21ef4baf8ddaba3ee2af7a389959feee" prot="private" virt="non-virtual"><scope>resistor</scope><name>t1</name></member>
+      <member refid="classresistor_1ae1117a7f660e2ff28a5a07cb820a49c3" prot="private" virt="non-virtual"><scope>resistor</scope><name>t2</name></member>
+      <member refid="classdevice_1a8f71f9ace8ef374bb5b3b2f131ae2b44" prot="protected" virt="non-virtual"><scope>resistor</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

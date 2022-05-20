@@ -1,0 +1,279 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classdevice" kind="class" language="C++" prot="public">
+    <compoundname>device</compoundname>
+    <derivedcompoundref refid="classcomponent" prot="public" virt="non-virtual">component</derivedcompoundref>
+    <includes refid="device_8h" local="no">device.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classdevice_1a452a6a3d5bfb3fbdd625c20a1f69e538" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string device::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>device::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="device.h" line="7" column="12" bodyfile="device.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="classdevice_1af0e4c032ff342a73449ddf3bcdbb24fb" compoundref="device_8cpp" startline="19" endline="22">getID</referencedby>
+        <referencedby refid="classdevice_1a9481aede3c6d38cb0cfff76ea0c83f0d" compoundref="device_8cpp" startline="11" endline="17">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdevice_1a8f71f9ace8ef374bb5b3b2f131ae2b44" prot="protected" static="no" mutable="no">
+        <type>string</type>
+        <definition>string device::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>device::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="device.h" line="7" column="15" bodyfile="device.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="classdevice_1acd13cfc365c2fa38f926d955be1ec5b2" compoundref="device_8cpp" startline="23" endline="26">getType</referencedby>
+        <referencedby refid="classdevice_1a9481aede3c6d38cb0cfff76ea0c83f0d" compoundref="device_8cpp" startline="11" endline="17">print</referencedby>
+        <referencedby refid="classdevice_1aff7843c682e3d3fded1335f3fa4a035d" compoundref="device_8cpp" startline="2" endline="9">setData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdevice_1aa5f2d2dc4b67a658165b27ed81ca41a0" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double device::default_val</definition>
+        <argsstring></argsstring>
+        <name>default_val</name>
+        <qualifiedname>device::default_val</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="device.h" line="8" column="12" bodyfile="device.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="classdevice_1a9d4e38d6e7f3122146ca41cef3a35756" compoundref="device_8cpp" startline="35" endline="38">getDefault</referencedby>
+        <referencedby refid="classdevice_1a9481aede3c6d38cb0cfff76ea0c83f0d" compoundref="device_8cpp" startline="11" endline="17">print</referencedby>
+        <referencedby refid="classdevice_1aff7843c682e3d3fded1335f3fa4a035d" compoundref="device_8cpp" startline="2" endline="9">setData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdevice_1a116b1479ca0fec8611fd43ad65cff692" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double device::min_val</definition>
+        <argsstring></argsstring>
+        <name>min_val</name>
+        <qualifiedname>device::min_val</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="device.h" line="8" column="24" bodyfile="device.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="classdevice_1ac57702748322c69357c7ab65c453d27b" compoundref="device_8cpp" startline="27" endline="30">getMin</referencedby>
+        <referencedby refid="classdevice_1a9481aede3c6d38cb0cfff76ea0c83f0d" compoundref="device_8cpp" startline="11" endline="17">print</referencedby>
+        <referencedby refid="classdevice_1aff7843c682e3d3fded1335f3fa4a035d" compoundref="device_8cpp" startline="2" endline="9">setData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="classdevice_1a6a7a4d88c4f5613201e6f9acfb95f2bf" prot="protected" static="no" mutable="no">
+        <type>double</type>
+        <definition>double device::max_val</definition>
+        <argsstring></argsstring>
+        <name>max_val</name>
+        <qualifiedname>device::max_val</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="device.h" line="8" column="32" bodyfile="device.h" bodystart="8" bodyend="-1"/>
+        <referencedby refid="classdevice_1a3367e59575d543ebb1ee6209f4c0ca22" compoundref="device_8cpp" startline="31" endline="34">getMax</referencedby>
+        <referencedby refid="classdevice_1a9481aede3c6d38cb0cfff76ea0c83f0d" compoundref="device_8cpp" startline="11" endline="17">print</referencedby>
+        <referencedby refid="classdevice_1aff7843c682e3d3fded1335f3fa4a035d" compoundref="device_8cpp" startline="2" endline="9">setData</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classdevice_1aff7843c682e3d3fded1335f3fa4a035d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void device::setData</definition>
+        <argsstring>(string &amp;ID, string &amp;TYPE, double &amp;DEFAULT_VAL, double &amp;MIN_VAL, double &amp;MAX_VAL)</argsstring>
+        <name>setData</name>
+        <qualifiedname>device::setData</qualifiedname>
+        <param>
+          <type>string &amp;</type>
+          <declname>ID</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>TYPE</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>DEFAULT_VAL</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>MIN_VAL</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>MAX_VAL</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="device.h" line="10" column="10" bodyfile="device.cpp" bodystart="2" bodyend="9"/>
+        <references refid="classdevice_1aa5f2d2dc4b67a658165b27ed81ca41a0" compoundref="device_8h" startline="8">default_val</references>
+        <references refid="classdevice_1a6a7a4d88c4f5613201e6f9acfb95f2bf" compoundref="device_8h" startline="8">max_val</references>
+        <references refid="classdevice_1a116b1479ca0fec8611fd43ad65cff692" compoundref="device_8h" startline="8">min_val</references>
+        <references refid="classdevice_1a8f71f9ace8ef374bb5b3b2f131ae2b44" compoundref="device_8h" startline="7">type</references>
+        <referencedby refid="classcomponent_1af8391808376a243475ca53dc0186c3c3" compoundref="component_8cpp" startline="3" endline="7">component::setData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdevice_1af0e4c032ff342a73449ddf3bcdbb24fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string device::getID</definition>
+        <argsstring>()</argsstring>
+        <name>getID</name>
+        <qualifiedname>device::getID</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="device.h" line="11" column="12" bodyfile="device.cpp" bodystart="19" bodyend="22"/>
+        <references refid="classdevice_1a452a6a3d5bfb3fbdd625c20a1f69e538" compoundref="device_8h" startline="7">id</references>
+      </memberdef>
+      <memberdef kind="function" id="classdevice_1acd13cfc365c2fa38f926d955be1ec5b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>string</type>
+        <definition>string device::getType</definition>
+        <argsstring>()</argsstring>
+        <name>getType</name>
+        <qualifiedname>device::getType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="device.h" line="12" column="12" bodyfile="device.cpp" bodystart="23" bodyend="26"/>
+        <references refid="classdevice_1a8f71f9ace8ef374bb5b3b2f131ae2b44" compoundref="device_8h" startline="7">type</references>
+      </memberdef>
+      <memberdef kind="function" id="classdevice_1a9481aede3c6d38cb0cfff76ea0c83f0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void device::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <qualifiedname>device::print</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="device.h" line="13" column="10" bodyfile="device.cpp" bodystart="11" bodyend="17"/>
+        <references refid="classdevice_1aa5f2d2dc4b67a658165b27ed81ca41a0" compoundref="device_8h" startline="8">default_val</references>
+        <references refid="classdevice_1a452a6a3d5bfb3fbdd625c20a1f69e538" compoundref="device_8h" startline="7">id</references>
+        <references refid="classdevice_1a6a7a4d88c4f5613201e6f9acfb95f2bf" compoundref="device_8h" startline="8">max_val</references>
+        <references refid="classdevice_1a116b1479ca0fec8611fd43ad65cff692" compoundref="device_8h" startline="8">min_val</references>
+        <references refid="classdevice_1a8f71f9ace8ef374bb5b3b2f131ae2b44" compoundref="device_8h" startline="7">type</references>
+        <referencedby refid="classcomponent_1a1d525e2d2c985ed0da4f7f13b22f453d" compoundref="component_8cpp" startline="8" endline="14">component::print</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classdevice_1ac57702748322c69357c7ab65c453d27b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double device::getMin</definition>
+        <argsstring>()</argsstring>
+        <name>getMin</name>
+        <qualifiedname>device::getMin</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="device.h" line="14" column="12" bodyfile="device.cpp" bodystart="27" bodyend="30"/>
+        <references refid="classdevice_1a116b1479ca0fec8611fd43ad65cff692" compoundref="device_8h" startline="8">min_val</references>
+      </memberdef>
+      <memberdef kind="function" id="classdevice_1a3367e59575d543ebb1ee6209f4c0ca22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double device::getMax</definition>
+        <argsstring>()</argsstring>
+        <name>getMax</name>
+        <qualifiedname>device::getMax</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="device.h" line="15" column="12" bodyfile="device.cpp" bodystart="31" bodyend="34"/>
+        <references refid="classdevice_1a6a7a4d88c4f5613201e6f9acfb95f2bf" compoundref="device_8h" startline="8">max_val</references>
+      </memberdef>
+      <memberdef kind="function" id="classdevice_1a9d4e38d6e7f3122146ca41cef3a35756" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double device::getDefault</definition>
+        <argsstring>()</argsstring>
+        <name>getDefault</name>
+        <qualifiedname>device::getDefault</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="device.h" line="16" column="12" bodyfile="device.cpp" bodystart="35" bodyend="38"/>
+        <references refid="classdevice_1aa5f2d2dc4b67a658165b27ed81ca41a0" compoundref="device_8h" startline="8">default_val</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>component</label>
+        <link refid="classcomponent"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>device</label>
+        <link refid="classdevice"/>
+      </node>
+      <node id="3">
+        <label>mosfet</label>
+        <link refid="classmosfet"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>resistor</label>
+        <link refid="classresistor"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>device</label>
+        <link refid="classdevice"/>
+      </node>
+    </collaborationgraph>
+    <location file="device.h" line="4" column="1" bodyfile="device.h" bodystart="5" bodyend="18"/>
+    <listofallmembers>
+      <member refid="classdevice_1aa5f2d2dc4b67a658165b27ed81ca41a0" prot="protected" virt="non-virtual"><scope>device</scope><name>default_val</name></member>
+      <member refid="classdevice_1a9d4e38d6e7f3122146ca41cef3a35756" prot="public" virt="non-virtual"><scope>device</scope><name>getDefault</name></member>
+      <member refid="classdevice_1af0e4c032ff342a73449ddf3bcdbb24fb" prot="public" virt="non-virtual"><scope>device</scope><name>getID</name></member>
+      <member refid="classdevice_1a3367e59575d543ebb1ee6209f4c0ca22" prot="public" virt="non-virtual"><scope>device</scope><name>getMax</name></member>
+      <member refid="classdevice_1ac57702748322c69357c7ab65c453d27b" prot="public" virt="non-virtual"><scope>device</scope><name>getMin</name></member>
+      <member refid="classdevice_1acd13cfc365c2fa38f926d955be1ec5b2" prot="public" virt="non-virtual"><scope>device</scope><name>getType</name></member>
+      <member refid="classdevice_1a452a6a3d5bfb3fbdd625c20a1f69e538" prot="protected" virt="non-virtual"><scope>device</scope><name>id</name></member>
+      <member refid="classdevice_1a6a7a4d88c4f5613201e6f9acfb95f2bf" prot="protected" virt="non-virtual"><scope>device</scope><name>max_val</name></member>
+      <member refid="classdevice_1a116b1479ca0fec8611fd43ad65cff692" prot="protected" virt="non-virtual"><scope>device</scope><name>min_val</name></member>
+      <member refid="classdevice_1a9481aede3c6d38cb0cfff76ea0c83f0d" prot="public" virt="non-virtual"><scope>device</scope><name>print</name></member>
+      <member refid="classdevice_1aff7843c682e3d3fded1335f3fa4a035d" prot="public" virt="non-virtual"><scope>device</scope><name>setData</name></member>
+      <member refid="classdevice_1a8f71f9ace8ef374bb5b3b2f131ae2b44" prot="protected" virt="non-virtual"><scope>device</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

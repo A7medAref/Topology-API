@@ -1,0 +1,145 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="_json_parser_8cpp" kind="file" language="C++">
+    <compoundname>JsonParser.cpp</compoundname>
+    <includes refid="_json_parser_8h" local="yes">JsonParser.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>JsonParser.cpp</label>
+        <link refid="_json_parser_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>JsonParser.h</label>
+        <link refid="_json_parser_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>component.h</label>
+        <link refid="component_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>device.h</label>
+        <link refid="device_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>mosfet.h</label>
+        <link refid="mosfet_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>resistor.h</label>
+        <link refid="resistor_8h"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>topology.h</label>
+        <link refid="topology_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>fstream</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>json.hpp</label>
+      </node>
+      <node id="11">
+        <label>map</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="13">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_json_parser_8h" kindref="compound">JsonParser.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2" refid="class_json_parser_1a954baa4f002b2662622dff1e53257703" refkind="member"><highlight class="normal"><ref refid="_json_parser_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/><ref refid="class_json_parser_1a954baa4f002b2662622dff1e53257703" kindref="member">JsonParser:: read</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fileName)</highlight></codeline>
+<codeline lineno="3"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>ifstream<sp/>file(fileName);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_json_parser_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>topologyData<sp/>=<sp/>json::parse(file);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>topologyData;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8" refid="class_json_parser_1a914d64538c1f75e0350019493ebd86ef" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_json_parser_1a914d64538c1f75e0350019493ebd86ef" kindref="member">JsonParser::store</ref>(<ref refid="_json_parser_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>jsonData,<sp/><ref refid="classtopology" kindref="compound">topology</ref>*<sp/>newTopology)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>newTopology-&gt;<ref refid="classtopology_1ab6c4cab16827fdc712169be5795ab72e" kindref="member">setID</ref>(jsonData[</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>type,<sp/>id,<sp/>valueName;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>DEFAULT,<sp/>MIN,<sp/>MAX;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>comp<sp/>:<sp/>jsonData[</highlight><highlight class="stringliteral">&quot;components&quot;</highlight><highlight class="normal">])</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map&lt;string,<sp/>string&gt;<sp/>netlist;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>type<sp/>=<sp/>comp[</highlight><highlight class="stringliteral">&quot;type&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>comp[</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;resistor&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>valueName<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;resistance&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type.find(</highlight><highlight class="stringliteral">&quot;mos&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>valueName<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;m(l)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>:<sp/>comp[</highlight><highlight class="stringliteral">&quot;netlist&quot;</highlight><highlight class="normal">].items())</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>netlist[it.key()]<sp/>=<sp/>it.value();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MIN<sp/>=<sp/>(double)comp[valueName][</highlight><highlight class="stringliteral">&quot;min&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAX<sp/>=<sp/>(double)comp[valueName][</highlight><highlight class="stringliteral">&quot;max&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DEFAULT<sp/>=<sp/>(double)comp[valueName][</highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>newTopology-&gt;<ref refid="classtopology_1aa24ee3c212afb488d266dbde5f702793" kindref="member">insertComponent</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/>type,<sp/>DEFAULT,<sp/>MIN,<sp/>MAX,<sp/>netlist);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="30" refid="class_json_parser_1adb51f1515e30d666e6191279b0947eca" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_json_parser_1adb51f1515e30d666e6191279b0947eca" kindref="member">JsonParser::write</ref>(<ref refid="classtopology" kindref="compound">topology</ref>*<sp/>targetTopology,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>fileName)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>ofstream<sp/>file(fileName);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_json_parser_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>jsonFile;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>jsonFile[</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">]<sp/>=<sp/>targetTopology-&gt;<ref refid="classtopology_1adaef98940b894c8a569b12aafd917baf" kindref="member">getID</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>valuesName;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="classcomponent" kindref="compound">component</ref>*<sp/>comp<sp/>:<sp/>targetTopology-&gt;<ref refid="classtopology_1a5bb91afba41407c93c933bdbacd979c0" kindref="member">getComponents</ref>())</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_json_parser_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref><sp/>jsonTopologyComp;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonTopologyComp[</highlight><highlight class="stringliteral">&quot;id&quot;</highlight><highlight class="normal">]<sp/>=<sp/>comp-&gt;getID();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonTopologyComp[</highlight><highlight class="stringliteral">&quot;type&quot;</highlight><highlight class="normal">]<sp/>=<sp/>comp-&gt;getType();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(comp-&gt;getType()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;resistor&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>valuesName<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;resistance&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(comp-&gt;getType()<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;nmos&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>valuesName<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;m(l)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonTopologyComp[valuesName][</highlight><highlight class="stringliteral">&quot;default&quot;</highlight><highlight class="normal">]<sp/>=<sp/>comp-&gt;getDefault();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonTopologyComp[valuesName][</highlight><highlight class="stringliteral">&quot;min&quot;</highlight><highlight class="normal">]<sp/>=<sp/>comp-&gt;getMin();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonTopologyComp[valuesName][</highlight><highlight class="stringliteral">&quot;max&quot;</highlight><highlight class="normal">]<sp/>=<sp/>comp-&gt;getMax();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>net<sp/>:<sp/>comp-&gt;getNetlist())</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonTopologyComp[</highlight><highlight class="stringliteral">&quot;netlist&quot;</highlight><highlight class="normal">][net.first]<sp/>=<sp/>net.second;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jsonFile[</highlight><highlight class="stringliteral">&quot;components&quot;</highlight><highlight class="normal">].push_back(jsonTopologyComp);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>file<sp/>&lt;&lt;<sp/>jsonFile;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="JsonParser.cpp"/>
+  </compounddef>
+</doxygen>

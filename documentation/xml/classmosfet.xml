@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classmosfet" kind="class" language="C++" prot="public">
+    <compoundname>mosfet</compoundname>
+    <basecompoundref refid="classcomponent" prot="public" virt="non-virtual">component</basecompoundref>
+    <includes refid="mosfet_8h" local="no">mosfet.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classmosfet_1aa744548a66509585f3b5c5422b97fb3f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>mosfet::mosfet</definition>
+        <argsstring>(string ID, string TYPE, double DEFAULT, double MIN, double MAX, map&lt; string, string &gt; NETLIST)</argsstring>
+        <name>mosfet</name>
+        <qualifiedname>mosfet::mosfet</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>ID</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>TYPE</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>DEFAULT</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>MIN</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>MAX</declname>
+        </param>
+        <param>
+          <type>map&lt; string, string &gt;</type>
+          <declname>NETLIST</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mosfet.h" line="6" column="5" bodyfile="mosfet.cpp" bodystart="2" bodyend="5"/>
+        <references refid="classcomponent_1af8391808376a243475ca53dc0186c3c3" compoundref="component_8cpp" startline="3" endline="7">component::setData</references>
+      </memberdef>
+      <memberdef kind="function" id="classmosfet_1a39300568d2aa19e269c8e0b0ed706094" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void mosfet::printSpecialData</definition>
+        <argsstring>()</argsstring>
+        <name>printSpecialData</name>
+        <qualifiedname>mosfet::printSpecialData</qualifiedname>
+        <reimplements refid="classcomponent_1a1d6d62d913be4323c01af5bf5abf3284">printSpecialData</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="mosfet.h" line="7" column="10" bodyfile="mosfet.cpp" bodystart="6" bodyend="9"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>component</label>
+        <link refid="classcomponent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>device</label>
+        <link refid="classdevice"/>
+      </node>
+      <node id="1">
+        <label>mosfet</label>
+        <link refid="classmosfet"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>component</label>
+        <link refid="classcomponent"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>device</label>
+        <link refid="classdevice"/>
+      </node>
+      <node id="1">
+        <label>mosfet</label>
+        <link refid="classmosfet"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="mosfet.h" line="3" column="1" bodyfile="mosfet.h" bodystart="4" bodyend="8"/>
+    <listofallmembers>
+      <member refid="classdevice_1aa5f2d2dc4b67a658165b27ed81ca41a0" prot="protected" virt="non-virtual"><scope>mosfet</scope><name>default_val</name></member>
+      <member refid="classdevice_1a9d4e38d6e7f3122146ca41cef3a35756" prot="public" virt="non-virtual"><scope>mosfet</scope><name>getDefault</name></member>
+      <member refid="classdevice_1af0e4c032ff342a73449ddf3bcdbb24fb" prot="public" virt="non-virtual"><scope>mosfet</scope><name>getID</name></member>
+      <member refid="classdevice_1a3367e59575d543ebb1ee6209f4c0ca22" prot="public" virt="non-virtual"><scope>mosfet</scope><name>getMax</name></member>
+      <member refid="classdevice_1ac57702748322c69357c7ab65c453d27b" prot="public" virt="non-virtual"><scope>mosfet</scope><name>getMin</name></member>
+      <member refid="classcomponent_1ae001395621bd5a0442aed4d26700efb2" prot="public" virt="non-virtual"><scope>mosfet</scope><name>getNetlist</name></member>
+      <member refid="classdevice_1acd13cfc365c2fa38f926d955be1ec5b2" prot="public" virt="non-virtual"><scope>mosfet</scope><name>getType</name></member>
+      <member refid="classcomponent_1a79511c951557d361d4e956c82137da70" prot="public" virt="non-virtual"><scope>mosfet</scope><name>hasNetlistNode</name></member>
+      <member refid="classdevice_1a452a6a3d5bfb3fbdd625c20a1f69e538" prot="protected" virt="non-virtual"><scope>mosfet</scope><name>id</name></member>
+      <member refid="classdevice_1a6a7a4d88c4f5613201e6f9acfb95f2bf" prot="protected" virt="non-virtual"><scope>mosfet</scope><name>max_val</name></member>
+      <member refid="classdevice_1a116b1479ca0fec8611fd43ad65cff692" prot="protected" virt="non-virtual"><scope>mosfet</scope><name>min_val</name></member>
+      <member refid="classmosfet_1aa744548a66509585f3b5c5422b97fb3f" prot="public" virt="non-virtual"><scope>mosfet</scope><name>mosfet</name></member>
+      <member refid="classcomponent_1a77118814571c4dc1a3eb8d13708943e1" prot="protected" virt="non-virtual"><scope>mosfet</scope><name>netlist</name></member>
+      <member refid="classcomponent_1a1d525e2d2c985ed0da4f7f13b22f453d" prot="public" virt="non-virtual"><scope>mosfet</scope><name>print</name></member>
+      <member refid="classmosfet_1a39300568d2aa19e269c8e0b0ed706094" prot="public" virt="virtual"><scope>mosfet</scope><name>printSpecialData</name></member>
+      <member refid="classcomponent_1af8391808376a243475ca53dc0186c3c3" prot="public" virt="non-virtual"><scope>mosfet</scope><name>setData</name></member>
+      <member refid="classdevice_1aff7843c682e3d3fded1335f3fa4a035d" prot="public" virt="non-virtual" ambiguityscope="device::"><scope>mosfet</scope><name>setData</name></member>
+      <member refid="classdevice_1a8f71f9ace8ef374bb5b3b2f131ae2b44" prot="protected" virt="non-virtual"><scope>mosfet</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

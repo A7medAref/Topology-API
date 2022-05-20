@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="component_8h" kind="file" language="C++">
+    <compoundname>component.h</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="device_8h" local="yes">device.h</includes>
+    <includes local="no">map</includes>
+    <includedby refid="component_8cpp" local="yes">component.cpp</includedby>
+    <includedby refid="mosfet_8h" local="yes">mosfet.h</includedby>
+    <includedby refid="resistor_8h" local="yes">resistor.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>component.h</label>
+        <link refid="component_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>device.h</label>
+        <link refid="device_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>iostream</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>API.cpp</label>
+        <link refid="_a_p_i_8cpp"/>
+      </node>
+      <node id="7">
+        <label>API.h</label>
+        <link refid="_a_p_i_8h"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>JsonParser.cpp</label>
+        <link refid="_json_parser_8cpp"/>
+      </node>
+      <node id="6">
+        <label>JsonParser.h</label>
+        <link refid="_json_parser_8h"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="2">
+        <label>component.cpp</label>
+        <link refid="component_8cpp"/>
+      </node>
+      <node id="1">
+        <label>component.h</label>
+        <link refid="component_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>mosfet.cpp</label>
+        <link refid="mosfet_8cpp"/>
+      </node>
+      <node id="3">
+        <label>mosfet.h</label>
+        <link refid="mosfet_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>resistor.cpp</label>
+        <link refid="resistor_8cpp"/>
+      </node>
+      <node id="14">
+        <label>resistor.h</label>
+        <link refid="resistor_8h"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>testingAPI.cpp</label>
+        <link refid="testing_a_p_i_8cpp"/>
+      </node>
+      <node id="9">
+        <label>testingAPI.h</label>
+        <link refid="testing_a_p_i_8h"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>topology.cpp</label>
+        <link refid="topology_8cpp"/>
+      </node>
+      <node id="5">
+        <label>topology.h</label>
+        <link refid="topology_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classcomponent" prot="public">component</innerclass>
+    <innernamespace refid="namespacestd">std</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="component_8h_1acaa28c462b3a26e78782aef38f1ad485" prot="public" static="no">
+        <name>H_COMPONENT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="component.h" line="3" column="9" bodyfile="component.h" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>H_COMPONENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="component_8h_1acaa28c462b3a26e78782aef38f1ad485" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>H_COMPONENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="device_8h" kindref="compound">device.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="9" refid="classcomponent" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classcomponent" kindref="compound">component</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classdevice" kindref="compound">device</ref></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12" refid="classcomponent_1a77118814571c4dc1a3eb8d13708943e1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>map&lt;string,<sp/>string&gt;<sp/><ref refid="classcomponent_1a77118814571c4dc1a3eb8d13708943e1" kindref="member">netlist</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcomponent_1af8391808376a243475ca53dc0186c3c3" kindref="member">setData</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>ID,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>TYPE,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>DEFAULT_VAL,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>MIN_VAL,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>MAX_VAL,<sp/>map&lt;string,<sp/>string&gt;&amp;<sp/>NETLIST);</highlight></codeline>
+<codeline lineno="16" refid="classcomponent_1a1d6d62d913be4323c01af5bf5abf3284" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcomponent_1a1d6d62d913be4323c01af5bf5abf3284" kindref="member">printSpecialData</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcomponent_1a1d525e2d2c985ed0da4f7f13b22f453d" kindref="member">print</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcomponent_1a79511c951557d361d4e956c82137da70" kindref="member">hasNetlistNode</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>targetNode);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>map&lt;string,<sp/>string&gt;<sp/><ref refid="classcomponent_1ae001395621bd5a0442aed4d26700efb2" kindref="member">getNetlist</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="component.h"/>
+  </compounddef>
+</doxygen>

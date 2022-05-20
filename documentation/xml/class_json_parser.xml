@@ -1,0 +1,94 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="class_json_parser" kind="class" language="C++" prot="public">
+    <compoundname>JsonParser</compoundname>
+    <includes refid="_json_parser_8h" local="no">JsonParser.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_json_parser_1a954baa4f002b2662622dff1e53257703" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_json_parser_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref></type>
+        <definition>json JsonParser::read</definition>
+        <argsstring>(string fileName)</argsstring>
+        <name>read</name>
+        <qualifiedname>JsonParser::read</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JsonParser.h" line="13" column="10" bodyfile="JsonParser.cpp" bodystart="2" bodyend="7"/>
+        <referencedby refid="class_a_p_i_1aaf3919fb222a14ea1778254f786ac524" compoundref="_a_p_i_8cpp" startline="2" endline="14">API::readJson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_parser_1a914d64538c1f75e0350019493ebd86ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonParser::store</definition>
+        <argsstring>(json jsonData, topology *newTopology)</argsstring>
+        <name>store</name>
+        <qualifiedname>JsonParser::store</qualifiedname>
+        <param>
+          <type><ref refid="_json_parser_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kindref="member">json</ref></type>
+          <declname>jsonData</declname>
+        </param>
+        <param>
+          <type><ref refid="classtopology" kindref="compound">topology</ref> *</type>
+          <declname>newTopology</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JsonParser.h" line="14" column="10" bodyfile="JsonParser.cpp" bodystart="8" bodyend="29"/>
+        <references refid="classtopology_1aa24ee3c212afb488d266dbde5f702793" compoundref="topology_8cpp" startline="10" endline="19">topology::insertComponent</references>
+        <references refid="classtopology_1ab6c4cab16827fdc712169be5795ab72e" compoundref="topology_8cpp" startline="2" endline="5">topology::setID</references>
+        <referencedby refid="class_a_p_i_1aaf3919fb222a14ea1778254f786ac524" compoundref="_a_p_i_8cpp" startline="2" endline="14">API::readJson</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_json_parser_1adb51f1515e30d666e6191279b0947eca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void JsonParser::write</definition>
+        <argsstring>(topology *targetTopology, string fileName)</argsstring>
+        <name>write</name>
+        <qualifiedname>JsonParser::write</qualifiedname>
+        <param>
+          <type><ref refid="classtopology" kindref="compound">topology</ref> *</type>
+          <declname>targetTopology</declname>
+        </param>
+        <param>
+          <type>string</type>
+          <declname>fileName</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="JsonParser.h" line="15" column="10" bodyfile="JsonParser.cpp" bodystart="30" bodyend="53"/>
+        <references refid="classtopology_1a5bb91afba41407c93c933bdbacd979c0" compoundref="topology_8cpp" startline="20" endline="23">topology::getComponents</references>
+        <references refid="classtopology_1adaef98940b894c8a569b12aafd917baf" compoundref="topology_8cpp" startline="6" endline="9">topology::getID</references>
+        <referencedby refid="class_a_p_i_1acd7799300144c45930f05f7d60be3c8e" compoundref="_a_p_i_8cpp" startline="15" endline="36">API::writeJson</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>JsonParser</label>
+        <link refid="class_json_parser"/>
+      </node>
+    </collaborationgraph>
+    <location file="JsonParser.h" line="10" column="1" bodyfile="JsonParser.h" bodystart="11" bodyend="16"/>
+    <listofallmembers>
+      <member refid="class_json_parser_1a954baa4f002b2662622dff1e53257703" prot="public" virt="non-virtual"><scope>JsonParser</scope><name>read</name></member>
+      <member refid="class_json_parser_1a914d64538c1f75e0350019493ebd86ef" prot="public" virt="non-virtual"><scope>JsonParser</scope><name>store</name></member>
+      <member refid="class_json_parser_1adb51f1515e30d666e6191279b0947eca" prot="public" virt="non-virtual"><scope>JsonParser</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

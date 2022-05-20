@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.4" xml:lang="en-US">
+  <compound refid="class_a_p_i" kind="class"><name>API</name>
+    <member refid="class_a_p_i_1aeea823948624332b2a99082a843ff52a" kind="variable"><name>JP</name></member>
+    <member refid="class_a_p_i_1a69806826650b09d736560a614dfdb9b9" kind="variable"><name>topologies</name></member>
+    <member refid="class_a_p_i_1aaf3919fb222a14ea1778254f786ac524" kind="function"><name>readJson</name></member>
+    <member refid="class_a_p_i_1acd7799300144c45930f05f7d60be3c8e" kind="function"><name>writeJson</name></member>
+    <member refid="class_a_p_i_1a8c66d0637c295aa67dc0e516c0bc8405" kind="function"><name>queryTopology</name></member>
+    <member refid="class_a_p_i_1a138da53b5d41d6e3d6a46dfce8f26e4e" kind="function"><name>deleteTopology</name></member>
+    <member refid="class_a_p_i_1a9c476663ff10eabb61636af6f134b166" kind="function"><name>queryDevices</name></member>
+    <member refid="class_a_p_i_1ae9c9307016beb4b1e6dd84e2c31ca2ad" kind="function"><name>queryDevicesWithNetlistNode</name></member>
+  </compound>
+  <compound refid="classcomponent" kind="class"><name>component</name>
+    <member refid="classcomponent_1a77118814571c4dc1a3eb8d13708943e1" kind="variable"><name>netlist</name></member>
+    <member refid="classcomponent_1af8391808376a243475ca53dc0186c3c3" kind="function"><name>setData</name></member>
+    <member refid="classcomponent_1a1d6d62d913be4323c01af5bf5abf3284" kind="function"><name>printSpecialData</name></member>
+    <member refid="classcomponent_1a1d525e2d2c985ed0da4f7f13b22f453d" kind="function"><name>print</name></member>
+    <member refid="classcomponent_1a79511c951557d361d4e956c82137da70" kind="function"><name>hasNetlistNode</name></member>
+    <member refid="classcomponent_1ae001395621bd5a0442aed4d26700efb2" kind="function"><name>getNetlist</name></member>
+  </compound>
+  <compound refid="classdevice" kind="class"><name>device</name>
+    <member refid="classdevice_1a452a6a3d5bfb3fbdd625c20a1f69e538" kind="variable"><name>id</name></member>
+    <member refid="classdevice_1a8f71f9ace8ef374bb5b3b2f131ae2b44" kind="variable"><name>type</name></member>
+    <member refid="classdevice_1aa5f2d2dc4b67a658165b27ed81ca41a0" kind="variable"><name>default_val</name></member>
+    <member refid="classdevice_1a116b1479ca0fec8611fd43ad65cff692" kind="variable"><name>min_val</name></member>
+    <member refid="classdevice_1a6a7a4d88c4f5613201e6f9acfb95f2bf" kind="variable"><name>max_val</name></member>
+    <member refid="classdevice_1aff7843c682e3d3fded1335f3fa4a035d" kind="function"><name>setData</name></member>
+    <member refid="classdevice_1af0e4c032ff342a73449ddf3bcdbb24fb" kind="function"><name>getID</name></member>
+    <member refid="classdevice_1acd13cfc365c2fa38f926d955be1ec5b2" kind="function"><name>getType</name></member>
+    <member refid="classdevice_1a9481aede3c6d38cb0cfff76ea0c83f0d" kind="function"><name>print</name></member>
+    <member refid="classdevice_1ac57702748322c69357c7ab65c453d27b" kind="function"><name>getMin</name></member>
+    <member refid="classdevice_1a3367e59575d543ebb1ee6209f4c0ca22" kind="function"><name>getMax</name></member>
+    <member refid="classdevice_1a9d4e38d6e7f3122146ca41cef3a35756" kind="function"><name>getDefault</name></member>
+  </compound>
+  <compound refid="class_json_parser" kind="class"><name>JsonParser</name>
+    <member refid="class_json_parser_1a954baa4f002b2662622dff1e53257703" kind="function"><name>read</name></member>
+    <member refid="class_json_parser_1a914d64538c1f75e0350019493ebd86ef" kind="function"><name>store</name></member>
+    <member refid="class_json_parser_1adb51f1515e30d666e6191279b0947eca" kind="function"><name>write</name></member>
+  </compound>
+  <compound refid="classmosfet" kind="class"><name>mosfet</name>
+    <member refid="classmosfet_1aa744548a66509585f3b5c5422b97fb3f" kind="function"><name>mosfet</name></member>
+    <member refid="classmosfet_1a39300568d2aa19e269c8e0b0ed706094" kind="function"><name>printSpecialData</name></member>
+  </compound>
+  <compound refid="classresistor" kind="class"><name>resistor</name>
+    <member refid="classresistor_1a21ef4baf8ddaba3ee2af7a389959feee" kind="variable"><name>t1</name></member>
+    <member refid="classresistor_1ae1117a7f660e2ff28a5a07cb820a49c3" kind="variable"><name>t2</name></member>
+    <member refid="classresistor_1ae7780d614bc475dae96813fa701e4e33" kind="function"><name>resistor</name></member>
+    <member refid="classresistor_1ab4fec0d3e3d306a676c847a5bf55fca3" kind="function"><name>printSpecialData</name></member>
+  </compound>
+  <compound refid="classtesting_a_p_i" kind="class"><name>testingAPI</name>
+    <member refid="classtesting_a_p_i_1aea3e3871f34520f85d8f2ad77404e7fd" kind="function"><name>testing_function1</name></member>
+    <member refid="classtesting_a_p_i_1abf2c10be4b7c3c421aef4cc285ea512a" kind="function"><name>testing_function2</name></member>
+    <member refid="classtesting_a_p_i_1a63291e65eddb818860f647cdced3ed99" kind="function"><name>testing_function3</name></member>
+    <member refid="classtesting_a_p_i_1ad0bb3984e8ba341f17b162585d58b441" kind="function"><name>testing_function4</name></member>
+    <member refid="classtesting_a_p_i_1a2e7d7215ad3ecb25db51d8a03dea78df" kind="function"><name>testing_function5</name></member>
+    <member refid="classtesting_a_p_i_1ad34ab9f239619b8b42df116ab5d7f209" kind="function"><name>testing_function6</name></member>
+  </compound>
+  <compound refid="classtopology" kind="class"><name>topology</name>
+    <member refid="classtopology_1a4bad637cb967e8211d1ed3fbab1240fd" kind="variable"><name>components</name></member>
+    <member refid="classtopology_1a51731a610a4d93ddbef3d4cc0473aa93" kind="variable"><name>id</name></member>
+    <member refid="classtopology_1ab6c4cab16827fdc712169be5795ab72e" kind="function"><name>setID</name></member>
+    <member refid="classtopology_1adaef98940b894c8a569b12aafd917baf" kind="function"><name>getID</name></member>
+    <member refid="classtopology_1aa24ee3c212afb488d266dbde5f702793" kind="function"><name>insertComponent</name></member>
+    <member refid="classtopology_1a5bb91afba41407c93c933bdbacd979c0" kind="function"><name>getComponents</name></member>
+    <member refid="classtopology_1a1b607b06e7e3ace87b01e53b6c7f60ea" kind="function"><name>getComponentsWithNetlistId</name></member>
+    <member refid="classtopology_1aa4cc2bd2b8edfa4c9ae9e46b330aaa22" kind="function"><name>hasThatId</name></member>
+    <member refid="classtopology_1a934eb90831509c8fccba072640faadd5" kind="function"><name>~topology</name></member>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="_a_p_i_8cpp" kind="file"><name>API.cpp</name>
+  </compound>
+  <compound refid="_a_p_i_8h" kind="file"><name>API.h</name>
+  </compound>
+  <compound refid="component_8cpp" kind="file"><name>component.cpp</name>
+  </compound>
+  <compound refid="component_8h" kind="file"><name>component.h</name>
+    <member refid="component_8h_1acaa28c462b3a26e78782aef38f1ad485" kind="define"><name>H_COMPONENT</name></member>
+  </compound>
+  <compound refid="device_8cpp" kind="file"><name>device.cpp</name>
+  </compound>
+  <compound refid="device_8h" kind="file"><name>device.h</name>
+  </compound>
+  <compound refid="_json_parser_8cpp" kind="file"><name>JsonParser.cpp</name>
+  </compound>
+  <compound refid="_json_parser_8h" kind="file"><name>JsonParser.h</name>
+    <member refid="_json_parser_8h_1ab701e3ac61a85b337ec5c1abaad6742d" kind="typedef"><name>json</name></member>
+  </compound>
+  <compound refid="mosfet_8cpp" kind="file"><name>mosfet.cpp</name>
+  </compound>
+  <compound refid="mosfet_8h" kind="file"><name>mosfet.h</name>
+  </compound>
+  <compound refid="resistor_8cpp" kind="file"><name>resistor.cpp</name>
+  </compound>
+  <compound refid="resistor_8h" kind="file"><name>resistor.h</name>
+  </compound>
+  <compound refid="_source_8cpp" kind="file"><name>Source.cpp</name>
+    <member refid="_source_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="testing_a_p_i_8cpp" kind="file"><name>testingAPI.cpp</name>
+  </compound>
+  <compound refid="testing_a_p_i_8h" kind="file"><name>testingAPI.h</name>
+  </compound>
+  <compound refid="topology_8cpp" kind="file"><name>topology.cpp</name>
+  </compound>
+  <compound refid="topology_8h" kind="file"><name>topology.h</name>
+  </compound>
+</doxygenindex>

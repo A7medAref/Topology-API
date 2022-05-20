@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classcomponent" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>component</compoundname>
+    <basecompoundref refid="classdevice" prot="public" virt="non-virtual">device</basecompoundref>
+    <derivedcompoundref refid="classmosfet" prot="public" virt="non-virtual">mosfet</derivedcompoundref>
+    <derivedcompoundref refid="classresistor" prot="public" virt="non-virtual">resistor</derivedcompoundref>
+    <includes refid="component_8h" local="no">component.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classcomponent_1a77118814571c4dc1a3eb8d13708943e1" prot="protected" static="no" mutable="no">
+        <type>map&lt; string, string &gt;</type>
+        <definition>map&lt;string, string&gt; component::netlist</definition>
+        <argsstring></argsstring>
+        <name>netlist</name>
+        <qualifiedname>component::netlist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="component.h" line="12" column="9" bodyfile="component.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="classcomponent_1ae001395621bd5a0442aed4d26700efb2" compoundref="component_8cpp" startline="22" endline="25">getNetlist</referencedby>
+        <referencedby refid="classcomponent_1a79511c951557d361d4e956c82137da70" compoundref="component_8cpp" startline="15" endline="21">hasNetlistNode</referencedby>
+        <referencedby refid="classcomponent_1a1d525e2d2c985ed0da4f7f13b22f453d" compoundref="component_8cpp" startline="8" endline="14">print</referencedby>
+        <referencedby refid="classcomponent_1af8391808376a243475ca53dc0186c3c3" compoundref="component_8cpp" startline="3" endline="7">setData</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classcomponent_1af8391808376a243475ca53dc0186c3c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void component::setData</definition>
+        <argsstring>(string &amp;ID, string &amp;TYPE, double &amp;DEFAULT_VAL, double &amp;MIN_VAL, double &amp;MAX_VAL, map&lt; string, string &gt; &amp;NETLIST)</argsstring>
+        <name>setData</name>
+        <qualifiedname>component::setData</qualifiedname>
+        <param>
+          <type>string &amp;</type>
+          <declname>ID</declname>
+        </param>
+        <param>
+          <type>string &amp;</type>
+          <declname>TYPE</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>DEFAULT_VAL</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>MIN_VAL</declname>
+        </param>
+        <param>
+          <type>double &amp;</type>
+          <declname>MAX_VAL</declname>
+        </param>
+        <param>
+          <type>map&lt; string, string &gt; &amp;</type>
+          <declname>NETLIST</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="component.h" line="15" column="10" bodyfile="component.cpp" bodystart="3" bodyend="7"/>
+        <references refid="classcomponent_1a77118814571c4dc1a3eb8d13708943e1" compoundref="component_8h" startline="12">netlist</references>
+        <references refid="classdevice_1aff7843c682e3d3fded1335f3fa4a035d" compoundref="device_8cpp" startline="2" endline="9">device::setData</references>
+        <referencedby refid="classmosfet_1aa744548a66509585f3b5c5422b97fb3f" compoundref="mosfet_8cpp" startline="2" endline="5">mosfet::mosfet</referencedby>
+        <referencedby refid="classresistor_1ae7780d614bc475dae96813fa701e4e33" compoundref="resistor_8cpp" startline="2" endline="5">resistor::resistor</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classcomponent_1a1d6d62d913be4323c01af5bf5abf3284" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void component::printSpecialData</definition>
+        <argsstring>()=0</argsstring>
+        <name>printSpecialData</name>
+        <qualifiedname>component::printSpecialData</qualifiedname>
+        <reimplementedby refid="classmosfet_1a39300568d2aa19e269c8e0b0ed706094">printSpecialData</reimplementedby>
+        <reimplementedby refid="classresistor_1ab4fec0d3e3d306a676c847a5bf55fca3">printSpecialData</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="component.h" line="16" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classcomponent_1a1d525e2d2c985ed0da4f7f13b22f453d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void component::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <qualifiedname>component::print</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="component.h" line="17" column="10" bodyfile="component.cpp" bodystart="8" bodyend="14"/>
+        <references refid="classcomponent_1a77118814571c4dc1a3eb8d13708943e1" compoundref="component_8h" startline="12">netlist</references>
+        <references refid="classdevice_1a9481aede3c6d38cb0cfff76ea0c83f0d" compoundref="device_8cpp" startline="11" endline="17">device::print</references>
+      </memberdef>
+      <memberdef kind="function" id="classcomponent_1a79511c951557d361d4e956c82137da70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool component::hasNetlistNode</definition>
+        <argsstring>(string targetNode)</argsstring>
+        <name>hasNetlistNode</name>
+        <qualifiedname>component::hasNetlistNode</qualifiedname>
+        <param>
+          <type>string</type>
+          <declname>targetNode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="component.h" line="18" column="10" bodyfile="component.cpp" bodystart="15" bodyend="21"/>
+        <references refid="classcomponent_1a77118814571c4dc1a3eb8d13708943e1" compoundref="component_8h" startline="12">netlist</references>
+      </memberdef>
+      <memberdef kind="function" id="classcomponent_1ae001395621bd5a0442aed4d26700efb2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>map&lt; string, string &gt;</type>
+        <definition>map&lt; string, string &gt; component::getNetlist</definition>
+        <argsstring>()</argsstring>
+        <name>getNetlist</name>
+        <qualifiedname>component::getNetlist</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="component.h" line="19" column="9" bodyfile="component.cpp" bodystart="22" bodyend="25"/>
+        <references refid="classcomponent_1a77118814571c4dc1a3eb8d13708943e1" compoundref="component_8h" startline="12">netlist</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>component</label>
+        <link refid="classcomponent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>device</label>
+        <link refid="classdevice"/>
+      </node>
+      <node id="3">
+        <label>mosfet</label>
+        <link refid="classmosfet"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>resistor</label>
+        <link refid="classresistor"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>component</label>
+        <link refid="classcomponent"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>device</label>
+        <link refid="classdevice"/>
+      </node>
+    </collaborationgraph>
+    <location file="component.h" line="9" column="1" bodyfile="component.h" bodystart="10" bodyend="20"/>
+    <listofallmembers>
+      <member refid="classdevice_1aa5f2d2dc4b67a658165b27ed81ca41a0" prot="protected" virt="non-virtual"><scope>component</scope><name>default_val</name></member>
+      <member refid="classdevice_1a9d4e38d6e7f3122146ca41cef3a35756" prot="public" virt="non-virtual"><scope>component</scope><name>getDefault</name></member>
+      <member refid="classdevice_1af0e4c032ff342a73449ddf3bcdbb24fb" prot="public" virt="non-virtual"><scope>component</scope><name>getID</name></member>
+      <member refid="classdevice_1a3367e59575d543ebb1ee6209f4c0ca22" prot="public" virt="non-virtual"><scope>component</scope><name>getMax</name></member>
+      <member refid="classdevice_1ac57702748322c69357c7ab65c453d27b" prot="public" virt="non-virtual"><scope>component</scope><name>getMin</name></member>
+      <member refid="classcomponent_1ae001395621bd5a0442aed4d26700efb2" prot="public" virt="non-virtual"><scope>component</scope><name>getNetlist</name></member>
+      <member refid="classdevice_1acd13cfc365c2fa38f926d955be1ec5b2" prot="public" virt="non-virtual"><scope>component</scope><name>getType</name></member>
+      <member refid="classcomponent_1a79511c951557d361d4e956c82137da70" prot="public" virt="non-virtual"><scope>component</scope><name>hasNetlistNode</name></member>
+      <member refid="classdevice_1a452a6a3d5bfb3fbdd625c20a1f69e538" prot="protected" virt="non-virtual"><scope>component</scope><name>id</name></member>
+      <member refid="classdevice_1a6a7a4d88c4f5613201e6f9acfb95f2bf" prot="protected" virt="non-virtual"><scope>component</scope><name>max_val</name></member>
+      <member refid="classdevice_1a116b1479ca0fec8611fd43ad65cff692" prot="protected" virt="non-virtual"><scope>component</scope><name>min_val</name></member>
+      <member refid="classcomponent_1a77118814571c4dc1a3eb8d13708943e1" prot="protected" virt="non-virtual"><scope>component</scope><name>netlist</name></member>
+      <member refid="classcomponent_1a1d525e2d2c985ed0da4f7f13b22f453d" prot="public" virt="non-virtual"><scope>component</scope><name>print</name></member>
+      <member refid="classcomponent_1a1d6d62d913be4323c01af5bf5abf3284" prot="public" virt="pure-virtual"><scope>component</scope><name>printSpecialData</name></member>
+      <member refid="classcomponent_1af8391808376a243475ca53dc0186c3c3" prot="public" virt="non-virtual"><scope>component</scope><name>setData</name></member>
+      <member refid="classdevice_1aff7843c682e3d3fded1335f3fa4a035d" prot="public" virt="non-virtual" ambiguityscope="device::"><scope>component</scope><name>setData</name></member>
+      <member refid="classdevice_1a8f71f9ace8ef374bb5b3b2f131ae2b44" prot="protected" virt="non-virtual"><scope>component</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="component_8cpp" kind="file" language="C++">
+    <compoundname>component.cpp</compoundname>
+    <includes refid="component_8h" local="yes">component.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>component.cpp</label>
+        <link refid="component_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>component.h</label>
+        <link refid="component_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>device.h</label>
+        <link refid="device_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="5">
+        <label>map</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="component_8h" kindref="compound">component.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="classcomponent_1af8391808376a243475ca53dc0186c3c3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcomponent_1af8391808376a243475ca53dc0186c3c3" kindref="member">component:: setData</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>ID,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>TYPE,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>DEFAULT_VAL,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>MIN_VAL,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>MAX_VAL,<sp/>map&lt;string,<sp/>string&gt;&amp;<sp/>NETLIST)</highlight></codeline>
+<codeline lineno="4"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdevice_1aff7843c682e3d3fded1335f3fa4a035d" kindref="member">device::setData</ref>(ID,<sp/>TYPE,<sp/>DEFAULT_VAL,<sp/>MIN_VAL,<sp/>MAX_VAL);</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcomponent_1a77118814571c4dc1a3eb8d13708943e1" kindref="member">netlist</ref><sp/>=<sp/>NETLIST;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8" refid="classcomponent_1a1d525e2d2c985ed0da4f7f13b22f453d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classcomponent_1a1d525e2d2c985ed0da4f7f13b22f453d" kindref="member">component:: print</ref>()</highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classdevice_1a9481aede3c6d38cb0cfff76ea0c83f0d" kindref="member">device::print</ref>();</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>:<sp/><ref refid="classcomponent_1a77118814571c4dc1a3eb8d13708943e1" kindref="member">netlist</ref>)</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;&quot;&apos;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>it.first<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;<sp/>:<sp/>\&quot;&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>it.second<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;}&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15" refid="classcomponent_1a79511c951557d361d4e956c82137da70" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classcomponent_1a79511c951557d361d4e956c82137da70" kindref="member">component:: hasNetlistNode</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>targetNode)</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>node<sp/>:<sp/><ref refid="classcomponent_1a77118814571c4dc1a3eb8d13708943e1" kindref="member">netlist</ref>)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(node.second<sp/>==<sp/>targetNode)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22" refid="classcomponent_1ae001395621bd5a0442aed4d26700efb2" refkind="member"><highlight class="normal">map&lt;string,<sp/>string&gt;<sp/><ref refid="classcomponent_1ae001395621bd5a0442aed4d26700efb2" kindref="member">component::getNetlist</ref>()</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classcomponent_1a77118814571c4dc1a3eb8d13708943e1" kindref="member">netlist</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="component.cpp"/>
+  </compounddef>
+</doxygen>

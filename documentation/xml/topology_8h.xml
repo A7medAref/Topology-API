@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="topology_8h" kind="file" language="C++">
+    <compoundname>topology.h</compoundname>
+    <includes refid="resistor_8h" local="yes">resistor.h</includes>
+    <includes refid="mosfet_8h" local="yes">mosfet.h</includes>
+    <includes local="no">vector</includes>
+    <includedby refid="_json_parser_8h" local="yes">JsonParser.h</includedby>
+    <includedby refid="topology_8cpp" local="yes">topology.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>component.h</label>
+        <link refid="component_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>device.h</label>
+        <link refid="device_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>mosfet.h</label>
+        <link refid="mosfet_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>resistor.h</label>
+        <link refid="resistor_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>topology.h</label>
+        <link refid="topology_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>iostream</label>
+      </node>
+      <node id="6">
+        <label>map</label>
+      </node>
+      <node id="8">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>API.cpp</label>
+        <link refid="_a_p_i_8cpp"/>
+      </node>
+      <node id="3">
+        <label>API.h</label>
+        <link refid="_a_p_i_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>JsonParser.cpp</label>
+        <link refid="_json_parser_8cpp"/>
+      </node>
+      <node id="2">
+        <label>JsonParser.h</label>
+        <link refid="_json_parser_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>Source.cpp</label>
+        <link refid="_source_8cpp"/>
+      </node>
+      <node id="7">
+        <label>testingAPI.cpp</label>
+        <link refid="testing_a_p_i_8cpp"/>
+      </node>
+      <node id="5">
+        <label>testingAPI.h</label>
+        <link refid="testing_a_p_i_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>topology.cpp</label>
+        <link refid="topology_8cpp"/>
+      </node>
+      <node id="1">
+        <label>topology.h</label>
+        <link refid="topology_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classtopology" prot="public">topology</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="resistor_8h" kindref="compound">resistor.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mosfet_8h" kindref="compound">mosfet.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="classtopology" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classtopology" kindref="compound">topology</ref></highlight></codeline>
+<codeline lineno="6"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;component*&gt;<sp/>components;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>id;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classtopology_1ab6c4cab16827fdc712169be5795ab72e" kindref="member">setID</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ID);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/><ref refid="classtopology_1adaef98940b894c8a569b12aafd917baf" kindref="member">getID</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classcomponent" kindref="compound">component</ref>*<sp/><ref refid="classtopology_1aa24ee3c212afb488d266dbde5f702793" kindref="member">insertComponent</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>ID,<sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>TYPE,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>DEFAULT,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>MIN,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>MAX,<sp/>map&lt;string,<sp/>string&gt;&amp;<sp/>NETLIST);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;component*&gt;<sp/><ref refid="classtopology_1a5bb91afba41407c93c933bdbacd979c0" kindref="member">getComponents</ref>();</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>vector&lt;component*&gt;<sp/><ref refid="classtopology_1a1b607b06e7e3ace87b01e53b6c7f60ea" kindref="member">getComponentsWithNetlistId</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>Node);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classtopology_1aa4cc2bd2b8edfa4c9ae9e46b330aaa22" kindref="member">hasThatId</ref>(</highlight><highlight class="keywordtype">string</highlight><highlight class="normal"><sp/>ID);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classtopology_1a934eb90831509c8fccba072640faadd5" kindref="member">~topology</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="topology.h"/>
+  </compounddef>
+</doxygen>

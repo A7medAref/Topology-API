@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classtesting_a_p_i" kind="class" language="C++" prot="public">
+    <compoundname>testingAPI</compoundname>
+    <includes refid="testing_a_p_i_8h" local="no">testingAPI.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classtesting_a_p_i_1aea3e3871f34520f85d8f2ad77404e7fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testingAPI::testing_function1</definition>
+        <argsstring>()</argsstring>
+        <name>testing_function1</name>
+        <qualifiedname>testingAPI::testing_function1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="testingAPI.h" line="6" column="6" bodyfile="testingAPI.cpp" bodystart="2" bodyend="43"/>
+        <references refid="class_a_p_i_1aaf3919fb222a14ea1778254f786ac524" compoundref="_a_p_i_8cpp" startline="2" endline="14">API::readJson</references>
+        <referencedby refid="_source_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_source_8cpp" startline="2" endline="11">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_a_p_i_1abf2c10be4b7c3c421aef4cc285ea512a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testingAPI::testing_function2</definition>
+        <argsstring>()</argsstring>
+        <name>testing_function2</name>
+        <qualifiedname>testingAPI::testing_function2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="testingAPI.h" line="7" column="6" bodyfile="testingAPI.cpp" bodystart="44" bodyend="76"/>
+        <references refid="class_a_p_i_1aaf3919fb222a14ea1778254f786ac524" compoundref="_a_p_i_8cpp" startline="2" endline="14">API::readJson</references>
+        <references refid="class_a_p_i_1acd7799300144c45930f05f7d60be3c8e" compoundref="_a_p_i_8cpp" startline="15" endline="36">API::writeJson</references>
+        <referencedby refid="_source_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_source_8cpp" startline="2" endline="11">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_a_p_i_1a63291e65eddb818860f647cdced3ed99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testingAPI::testing_function3</definition>
+        <argsstring>()</argsstring>
+        <name>testing_function3</name>
+        <qualifiedname>testingAPI::testing_function3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="testingAPI.h" line="8" column="6" bodyfile="testingAPI.cpp" bodystart="78" bodyend="109"/>
+        <references refid="class_a_p_i_1a8c66d0637c295aa67dc0e516c0bc8405" compoundref="_a_p_i_8cpp" startline="37" endline="40">API::queryTopology</references>
+        <references refid="class_a_p_i_1aaf3919fb222a14ea1778254f786ac524" compoundref="_a_p_i_8cpp" startline="2" endline="14">API::readJson</references>
+        <referencedby refid="_source_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_source_8cpp" startline="2" endline="11">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_a_p_i_1ad0bb3984e8ba341f17b162585d58b441" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testingAPI::testing_function4</definition>
+        <argsstring>()</argsstring>
+        <name>testing_function4</name>
+        <qualifiedname>testingAPI::testing_function4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="testingAPI.h" line="9" column="6" bodyfile="testingAPI.cpp" bodystart="111" bodyend="142"/>
+        <references refid="class_a_p_i_1a138da53b5d41d6e3d6a46dfce8f26e4e" compoundref="_a_p_i_8cpp" startline="41" endline="51">API::deleteTopology</references>
+        <references refid="classtopology_1adaef98940b894c8a569b12aafd917baf" compoundref="topology_8cpp" startline="6" endline="9">topology::getID</references>
+        <references refid="class_a_p_i_1a8c66d0637c295aa67dc0e516c0bc8405" compoundref="_a_p_i_8cpp" startline="37" endline="40">API::queryTopology</references>
+        <references refid="class_a_p_i_1aaf3919fb222a14ea1778254f786ac524" compoundref="_a_p_i_8cpp" startline="2" endline="14">API::readJson</references>
+        <referencedby refid="_source_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_source_8cpp" startline="2" endline="11">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_a_p_i_1a2e7d7215ad3ecb25db51d8a03dea78df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testingAPI::testing_function5</definition>
+        <argsstring>()</argsstring>
+        <name>testing_function5</name>
+        <qualifiedname>testingAPI::testing_function5</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="testingAPI.h" line="10" column="6" bodyfile="testingAPI.cpp" bodystart="144" bodyend="175"/>
+        <references refid="classtopology_1a5bb91afba41407c93c933bdbacd979c0" compoundref="topology_8cpp" startline="20" endline="23">topology::getComponents</references>
+        <references refid="classtopology_1adaef98940b894c8a569b12aafd917baf" compoundref="topology_8cpp" startline="6" endline="9">topology::getID</references>
+        <references refid="class_a_p_i_1a9c476663ff10eabb61636af6f134b166" compoundref="_a_p_i_8cpp" startline="52" endline="59">API::queryDevices</references>
+        <references refid="class_a_p_i_1a8c66d0637c295aa67dc0e516c0bc8405" compoundref="_a_p_i_8cpp" startline="37" endline="40">API::queryTopology</references>
+        <references refid="class_a_p_i_1aaf3919fb222a14ea1778254f786ac524" compoundref="_a_p_i_8cpp" startline="2" endline="14">API::readJson</references>
+        <referencedby refid="_source_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_source_8cpp" startline="2" endline="11">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="classtesting_a_p_i_1ad34ab9f239619b8b42df116ab5d7f209" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool testingAPI::testing_function6</definition>
+        <argsstring>()</argsstring>
+        <name>testing_function6</name>
+        <qualifiedname>testingAPI::testing_function6</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="testingAPI.h" line="11" column="6" bodyfile="testingAPI.cpp" bodystart="177" bodyend="231"/>
+        <references refid="classtopology_1a5bb91afba41407c93c933bdbacd979c0" compoundref="topology_8cpp" startline="20" endline="23">topology::getComponents</references>
+        <references refid="classtopology_1adaef98940b894c8a569b12aafd917baf" compoundref="topology_8cpp" startline="6" endline="9">topology::getID</references>
+        <references refid="class_a_p_i_1ae9c9307016beb4b1e6dd84e2c31ca2ad" compoundref="_a_p_i_8cpp" startline="60" endline="69">API::queryDevicesWithNetlistNode</references>
+        <references refid="class_a_p_i_1a8c66d0637c295aa67dc0e516c0bc8405" compoundref="_a_p_i_8cpp" startline="37" endline="40">API::queryTopology</references>
+        <references refid="class_a_p_i_1aaf3919fb222a14ea1778254f786ac524" compoundref="_a_p_i_8cpp" startline="2" endline="14">API::readJson</references>
+        <referencedby refid="_source_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="_source_8cpp" startline="2" endline="11">main</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>testingAPI</label>
+        <link refid="classtesting_a_p_i"/>
+      </node>
+    </collaborationgraph>
+    <location file="testingAPI.h" line="3" column="1" bodyfile="testingAPI.h" bodystart="4" bodyend="12"/>
+    <listofallmembers>
+      <member refid="classtesting_a_p_i_1aea3e3871f34520f85d8f2ad77404e7fd" prot="public" virt="non-virtual"><scope>testingAPI</scope><name>testing_function1</name></member>
+      <member refid="classtesting_a_p_i_1abf2c10be4b7c3c421aef4cc285ea512a" prot="public" virt="non-virtual"><scope>testingAPI</scope><name>testing_function2</name></member>
+      <member refid="classtesting_a_p_i_1a63291e65eddb818860f647cdced3ed99" prot="public" virt="non-virtual"><scope>testingAPI</scope><name>testing_function3</name></member>
+      <member refid="classtesting_a_p_i_1ad0bb3984e8ba341f17b162585d58b441" prot="public" virt="non-virtual"><scope>testingAPI</scope><name>testing_function4</name></member>
+      <member refid="classtesting_a_p_i_1a2e7d7215ad3ecb25db51d8a03dea78df" prot="public" virt="non-virtual"><scope>testingAPI</scope><name>testing_function5</name></member>
+      <member refid="classtesting_a_p_i_1ad34ab9f239619b8b42df116ab5d7f209" prot="public" virt="non-virtual"><scope>testingAPI</scope><name>testing_function6</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
