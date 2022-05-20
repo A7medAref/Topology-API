@@ -10,7 +10,7 @@
 
 ### Class  Hierarchy
 
-![image](./snapshots/hierarchy.jpg)
+![image](./snapShots/hierarchy.jpg)
 
 ### Testing API
-![image](./snapshots/runningTesting.jpg)
+![image](./snapShots/runningTesting.jpg)
